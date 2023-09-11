@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500&family=Jost:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Jost:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.headersection{
+    background-color: #343434;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    z-index: 9;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li{
+    list-style-type: none;
+    padding:26px 50px 26px 25px;
+}
+.navbar ul{
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+    font-family:inter;
+    font-size: 15px;
+}
+.headermenu{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-top: 14px;
+}
+.searchbox{
+    background-color:white;
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    outline-style: none;
+    color: black;
+    padding-left: 15px;
+}
+
+.searchicon,.carticon{
+    padding-top: 25px;
+}
+.bannerimage{
+    background-image: url(assets/images/bannerimage.png);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height:800px;    
+}
+.bannercontent{
+    background-color: #353535;
+    opacity: 80%;
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 420px;
+    right: 150px;
+}
+.bannercontent{
+    animation-name: slidinganimation;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+}
+@keyframes slidinganimation{
+    from{
+        right: 0px;        
+    }
+    to{
+        right: 150px;
+    }
+}
+.bannercontent h1{
+    color: white;
+    font-family:bebas neue;
+    font-weight:lighter;
+    font-size:45px;
+    text-align: center;
+    padding-top: 65px;
+}
+.bannercontent select{
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: #343434;
+    color: white;
+    padding: 8px 10px 8px 20px;
+    width: 75%;
+    margin-left: 45px;
+    font-size: 12px;
+    outline-style: none;    
+}
+
+.cyclepartsimage{
+    background-image:url(assets/images/accessories/bicycleparts.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:800px;
+}
+.backgroundimage{
+    background-image: url(assets/images/accessories/background.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 900px;    
+}
+.getstartedbox{
+    background-color: rgba(255, 255, 255, 0.89);
+    height: 270px;
+    width:450px;
+    border-radius: 20px;
+    text-align: center;    
+    position: relative;
+    top: 500px;   
+    left: 415px;   
+}
+.getstartedcontent p{
+    font-family: inter;
+    font-size: 25px;
+    padding:  60px 0px 0px 50px;
+    width: 75%;  
+}
+.getstartedcontent button{
+    padding: 15px 25px;
+    border-color: black;
+    margin-top: 30px;    
+}
+.accessoriessection{
+    background-color: #D9D9D9;
+    width: 100%;
+    height: auto;
+}
+.accessoriesheading h1{
+    font-family: bebas neue;
+    font-size: 45px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 65px;
+}
+.accessoriessection p{
+    font-family: inter;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+}
+.accessoriesflex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.accessoriesflextwo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.accessoriescenterimage{
+    display: flex;
+    justify-content: center;
+    margin-top: -95px;   
+}
+.accessoriessection img:hover{
+    transform: translate(-10px, -20px) scale(1.1); 
+}
+.subflexfirst{
+    padding-top: 150px;    
+}
+.subflexthird{
+    padding-top: 150px;
+}
+.subflexfour{
+    margin-top: -150px;
+}
+.subflexfive{
+    margin-top: -150px;
+}
+.accessoriesbutton button{
+    padding: 8px 25px;
+    margin: 40px 0px;
+    border-radius: 25px;
+    border: none;
+    background-color: black;
+    color: white;    
+}
+.accessoriesbutton{
+    display: flex;
+    justify-content: center;
+}
+.featuredheading h1{
+    font-family: bebas neue;
+    font-size: 45px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 50px;
+}
+.mainflexpart{
+    display: flex;
+    justify-content: space-around;
+    padding: 65px 0px;
+}
+.subflexone{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    padding-left: 15px;
+}
+.subflexone img{
+   padding-bottom: 25px;
+}
+.footersection{
+    background-color: #343434;
+    width: 100%;
+    height: 300px;
+}
+.footerpart{
+    display: flex;
+    justify-content: space-between;
+    color: white;    
+}
+.footerpart h3{
+    font-family: inter;
+    font-size:19px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+.footerpart ul li{
+    list-style-type: none;
+    font-family: inter;
+    font-size:15px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.footerfour ul li img{
+    position: relative;
+    top: 4px;
+}
+.footerparttwo p{
+    font-family: inter;
+    font-size:15px;
+    font-weight: normal;    
+    color: white;    
+}
+.footerparttwo{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px 0px 0px;   
+}
+.socialicon{
+    display: flex;
+    gap: 24px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:575px){
+    .main{
+        overflow: hidden;
+    }
+    .headermenu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .headersection{
+        height: auto;
+    }
+    .logo{
+        width: 50px;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar ul li{
+        display: block;
+        padding: 10px 5px;
+    }
+    .navbar ul li a{
+        font-size: 8px;
+    }
+    .underline{
+        display: none;
+    }
+    
+    .searchicon{
+       display: none;
+    }
+    .carticon{
+        display: none;
+    }
+    .bannerimage{
+        height: 237px;
+        width: 100%;
+    }
+    .bannercontent h1{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .bannercontent select{
+        width: 78%;
+        padding: 5px;
+        margin-left: 18px;
+        border: 1px solid white;
+        border-radius: 3px;
+        font-size: 6px;
+    }
+    .bannercontent{
+        width: 150px;
+        height: 80px;
+        position: absolute;
+        top: 129px;
+        right: 46px;
+    }
+    @keyframes slidinganimation{
+        0% {
+            right: 0px;
+        }
+        100% {
+            right: 50px;
+        }
+    }
+    .cyclepartsimage{
+        height: 250px;
+    }
+    .backgroundimage{
+        height: 280px;
+    }
+    .getstartedbox{
+        width: 140px;
+        height: 90px;
+        border-radius: 5px ;
+        position: relative;
+        top: 100px;
+        left: 90px;
+    }
+    .getstartedcontent p{
+        font-size: 8px;
+        padding: 15px 0px;
+        width: 95%;
+    }
+    .getstartedcontent button{
+        margin-top: 0px;
+        padding: 5px 5px;  
+        font-size: 8px; 
+    }
+    .accessoriesheading h1{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .accessoriesflex{
+        display: flex;
+        margin-top: 0px;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .subflexfirst{
+        padding-top: 50px;
+    }
+    .subflexthird{
+        padding-top: 50px;
+    }
+    .accessoriessection p{
+        padding-top: 0px;
+        font-size: 10px;
+    }
+    .accessoriesflex img{
+        height: 100px;
+        width: 100px;
+    }
+    .accessoriescenterimage{
+        margin-top: 0px;
+    }
+    .accessoriescenterimage img{
+        height: 200px;
+        width: 200px;
+    }
+    .accessoriesflextwo img{
+        height: 100px;
+        width: 100px;
+    }
+    .subflexfour{
+        margin-top: -50px;
+    }
+    .subflexfive{
+        margin-top: -50px;
+    }
+    .accessoriesflextwo{
+        margin-top: 30px;
+        justify-content: space-evenly
+    }
+    .accessoriesbutton button{
+        font-size: 8px;
+        padding: 5px 10px;
+        margin: 20px 0px;
+    }
+    .featuredheading h1{
+        font-size: 35px;
+        padding-top: 20px;
+    }
+    .mainflexpart{
+        display: flex;
+        padding: 10px 0px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .featuresone img{
+        height: 300px;
+        width: 300px;
+        padding-bottom: 5px;
+    }
+    .featurestwo img {
+        height: 150px;
+        width: 150px;
+        
+    }
+    .featuresthree img{
+        height: 150px;
+        width: 150px;
+    }
+    .subflexone{
+        gap: 0px;
+        padding: 0px;
+    }
+    .featuresthree img{
+        padding-bottom: 5px;
+    }
+    .featurestwo img{
+        padding-bottom: 5px;
+    }
+    .subflexone{
+        display: block;
+    }
+    
+
+    .footerpart{
+        display: block;
+        padding: 20px;
+    }
+    .footersection{
+        height: auto;
+    }
+    .footerpart h3{
+        margin: 0px;
+        padding-top: 12px;
+        font-size: 15px;
+    }
+    .footerpart ul li{
+        font-size: 8px;
+    }
+    .footerparttwo{
+        display: block;
+        padding: 0px;
+    }
+    .socialicon{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    .footerparttwo p{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width:1367px){
+    .searchicon{
+        margin-right: -350px;
+    }
+    .cyclepartsimage{
+        height: 70rem;
+    }
+    .getstartedbox {
+        left: 40rem;
+    }
+    .subflexone{
+        display: block;
+    }
+}

@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500&family=Jost:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Jost:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.headersection{
+    background-color: #343434;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    z-index: 9;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li{
+    list-style-type: none;
+    padding:26px 50px 26px 25px;
+}
+.navbar ul{
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+    font-family:inter;
+    font-size: 15px;
+}
+.headermenu{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-top: 14px;
+}
+.searchbox{
+    background-color:white;
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    outline-style: none;
+    color: black;
+    padding-left: 15px;
+}
+
+.searchicon,.carticon{
+    padding-top: 25px;
+}
+.bannerimage{
+    background-image: url(assets/images/bannerimage.png);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height:800px;    
+}
+.bannercontent{
+    background-color: #353535;
+    opacity: 80%;
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 420px;
+    right: 150px;
+}
+.bannercontent{
+    animation-name: slidinganimation;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+}
+@keyframes slidinganimation{
+    from{
+        right: 0px;        
+    }
+    to{
+        right: 150px;
+    }
+}
+.bannercontent h1{
+    color: white;
+    font-family:bebas neue;
+    font-weight:lighter;
+    font-size:45px;
+    text-align: center;
+    padding-top: 65px;
+}
+.bannercontent select{
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: #343434;
+    color: white;
+    padding: 8px 10px 8px 20px;
+    width: 75%;
+    margin-left: 45px;
+    font-size: 12px;
+    outline-style: none;    
+}
+.springsection{
+    background-image: url(assets/images/feelimage.png);
+    background-size: cover;
+    object-fit: fill;
+    width: 100%;
+    height: 800px;
+}
+.springpart h1{
+    font-family:bebas neue;
+    font-weight:lighter;
+    font-size:45px;
+    text-align: center;
+    padding-top: 65px;
+}
+.springbutton button{
+    font-family: inter;
+    font-size: 15px;
+    padding: 15px 20px ;
+    background: none;
+    width:20%;
+}
+.springbutton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.productsection{
+    background-color:white;
+    opacity: 90%;
+    height: 750px;
+    width: 100%;
+}
+.productsheading h1{
+    font-family:bebas neue;
+    font-weight: lighter;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 65px;
+    color: black;
+}
+.flexproducts img{
+    object-fit:fill;
+    margin-top: 45px;
+}
+.flexproducts{
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    margin-left: 40px;
+}
+.flexproducts p{
+    font-family: jost;
+    font-size: 25px;
+    color: black;
+    padding: 20px 85px;
+}
+.flexproducts button {
+    border-radius: 20px;
+    padding: 8px 25px;
+    border: none;
+    margin: 0px 63px;
+    background-color: grey;
+    color: white;
+}
+.flexproducts button:hover{
+    background-color:black;
+    color: white;
+}
+.productstwo {
+    padding-left: 50px;
+}
+.productsthree{
+    padding-left: 25px;
+}
+.wheelssection{
+    background-color: #ECECEC;
+    height: 600px;
+}
+.fleximagesandcontent{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fleximagesandcontent img{
+    margin-top: 20px;
+}
+.wheelsandbrakescontent h1{
+    font-family:bebas neue;
+    font-weight: lighter;
+    font-size: 45px;
+    padding-top: 32px;
+}
+.wheelsandbrakescontent p{
+    font-family: inter;
+    font-size: 20px;
+    width: 90%;
+    padding-top:15px;
+}
+.scrollheading{
+    font-family: inter;
+    font-size: 20px;
+    padding: 50px 0px 20px 0px;
+}
+.scrollflexone{
+    display: flex;
+    justify-content: space-around;
+}
+.scrollflextwo{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.footersection{
+    background-color: #343434;
+    width: 100%;
+    height: 300px;
+}
+.footerpart{
+    display: flex;
+    justify-content: space-between;
+    color: white;    
+}
+.footerpart h3{
+    font-family: inter;
+    font-size:19px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+.footerpart ul li{
+    list-style-type: none;
+    font-family: inter;
+    font-size:15px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.footerfour ul li img{
+    position: relative;
+    top: 4px;
+}
+.footerparttwo p{
+    font-family: inter;
+    font-size:15px;
+    font-weight: normal;    
+    color: white;    
+}
+.footerparttwo{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px 0px 0px;   
+}
+.socialicon{
+    display: flex;
+    gap: 24px;
+}
+
+/* Responsive */
+
+@media screen and (max-width:575px){
+    .main{
+        overflow: hidden;
+    }
+    .headermenu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .headersection{
+        height: auto;
+    }
+    .logo{
+        width: 50px;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar ul li{
+        display: block;
+        padding: 10px 5px;
+    }
+    .navbar ul li a{
+        font-size: 8px;
+    }
+    .underline{
+        display: none;
+    }
+    
+    .searchicon{
+       display: none;
+    }
+    .carticon{
+        display: none;
+    }
+    .bannerimage{
+        height: 237px;
+        width: 100%;
+    }
+    .bannercontent h1{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .bannercontent select{
+        width: 78%;
+        padding: 5px;
+        margin-left: 18px;
+        border: 1px solid white;
+        border-radius: 3px;
+        font-size: 6px;
+    }
+    .bannercontent{
+        width: 150px;
+        height: 80px;
+        position: absolute;
+        top: 129px;
+        right: 46px;
+    }
+    @keyframes slidinganimation{
+        0% {
+            right: 0px;
+        }
+        100% {
+            right: 50px;
+        }
+    }
+    .springsection{
+        height: 250px;
+    }
+    .springpart h1{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .springbutton button{
+        font-size: 8px;
+        width: 28%;
+        padding: 5px 5px;
+    }
+    .springbutton{
+        margin-top: 0px;
+    }
+    .productsheading h1{
+        font-size: 16px;
+        padding: 20px;
+    }
+    .productsection{
+        height: auto;
+    }
+    .flexproducts{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+    .flexproducts img{
+        margin-top: 10px;
+    }
+    .productsone img{
+        height: 300px;
+        width: 180px;
+    }
+    .productstwo img{
+        height: 300px;
+        width: 180px;
+    }
+    .productsthree img{
+        height: 300px;
+        width: 180px;
+    }
+    .productsfour img{
+        height: 300px;
+        width: 180px;
+    }
+    .flexproducts p{
+        padding: 0px;
+        font-size: 10px;
+    }
+    .flexproducts button{
+        padding: 5px 10px;
+        font-size: 8px;
+        margin: 10px 0px;
+    }
+    .productstwo{
+        padding: 0px;
+    }
+    .productsthree{
+        padding: 0px;
+    }
+    .productsfour{
+        padding: 0px;
+    }
+    .fleximagesandcontent{
+        display: flex;
+    }
+    .fleximagesandcontent img{
+        height: 200px;
+        width: 200px;
+    }
+    .wheelsandbrakescontent h1{
+        font-size: 12px;
+        padding-top: 0px;
+    }
+    .wheelsandbrakescontent p{
+        padding-top: 0px;
+        width: 100%;
+        font-size:9px;
+    }
+    .wheelsandbrakescontent{
+        padding-top: 32px;
+    }
+    .wheelssection{
+        height: 242px;
+    }
+    .scrollheading{
+        font-size: 15px;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    .scrollflexone{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .scrollflexone img{
+        height: 170px;
+        width: 230px;
+    }
+    .scrollflextwo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .scrollflextwo img{
+        height: 170px;
+        width: 230px;
+    }
+    .footerpart{
+        display: block;
+        padding: 20px;
+    }
+    .footersection{
+        height: auto;
+    }
+    .footerpart h3{
+        margin: 0px;
+        padding-top: 20px;
+        font-size: 15px;
+    }
+    .footerpart ul li{
+        font-size: 13px;
+    }
+    .footerparttwo{
+        display: block;
+        padding: 0px;
+    }
+    .socialicon{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    .footerparttwo p{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:1367px){
+    .searchicon{
+        margin-right: -350px;
+    }
+    .wheelsandbrakescontent h1{
+        padding-top: 55px;
+    }
+    .scrollflexone{
+        justify-content: space-between;
+    }
+    .springsection{
+        height: 70rem;
+    }
+    .scrollflextwo{
+        justify-content: space-between;
+    }
+
+}

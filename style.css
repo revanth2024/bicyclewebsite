@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500&family=Jost:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Jost:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.headersection{
+    background-color: #343434;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    z-index: 9;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li{
+    list-style-type: none;
+    padding:26px 50px 26px 25px;
+}
+
+.navbar ul{
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+    font-family:inter;
+    font-size: 15px;
+}
+.headermenu{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-top: 14px;
+}
+.searchbox{
+    background-color:white;
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    outline-style: none;
+    color: black;
+    padding-left: 15px;
+}
+
+.searchicon,.carticon{
+    padding-top: 25px;
+}
+.bannerimage{
+    background-image: url(assets/images/bannerimage.png);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height:800px;    
+}
+.bannercontent{
+    background-color: #353535;
+    opacity: 80%;
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 420px;
+    right: 150px;
+}
+.bannercontent{
+    animation-name: slidinganimation;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+}
+@keyframes slidinganimation{
+    from{
+        right: 0px;        
+    }
+    to{
+        right: 150px;
+    }
+}
+.bannercontent h1{
+    color: white;
+    font-family:bebas neue;
+    font-weight:lighter;
+    font-size:45px;
+    text-align: center;
+    padding-top: 65px;
+}
+.bannercontent select{
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: #343434;
+    color: white;
+    padding: 8px 10px 8px 20px;
+    width: 75%;
+    margin-left: 45px;
+    font-size: 12px;
+    outline-style: none;    
+}
+.arrivalssection{
+    background-color:rgba(255, 255, 255, 0.90);;
+    width: 100%;
+    height: auto;
+    margin-top: px;
+}
+.arrivals h1{
+    color:black;
+    font-family:bebas neue;
+    font-weight:lighter;
+    font-size:45px;
+    text-align: center;
+    padding-top: 50px;   
+}
+.imagesone{
+    margin-top: -108px;
+}
+.arrivalsone,.arrivalsthree{
+    display: flex;
+    justify-content: space-evenly;    
+}
+.arrivalsone p {
+    margin-top: 40px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size:22px;
+    position: absolute;
+    left: 480px;
+}
+.arrivalsone h2{
+    margin-top: 40px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size:28px;
+}
+.arrivalsone h4{
+    font-family: roboto;
+    font-weight: bold;
+    font-size:20px;  
+}
+.offerpartone{
+    margin-right: 100px;
+}
+.arrivalstwo{
+    display: flex;
+    justify-content: space-around;  
+    flex-direction: row-reverse;  
+}
+.arrivalstwo p{
+    font-family: roboto;
+    font-weight: bold;
+    font-size:22px;
+    position: absolute;
+    right: 500px;
+    margin-top: 150px
+}
+.arrivalstwo h2{
+    margin-top:130px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size:28px;
+}
+.arrivalstwo h4{
+    font-family: roboto;
+    font-weight: bold;
+    font-size:20px;     
+}
+.offerparttwo{
+    margin-left: 125px;
+}
+.arrivalsthree p{
+    margin-top: 150px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size:22px;
+    position: absolute;
+    left: 500px;
+}
+.arrivalsthree h2{
+    margin-top:130px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size:28px;
+}
+.arrivalsthree h4{
+    font-family: roboto;
+    font-weight: bold;
+    font-size:20px;
+}
+.offerpartthree{
+    margin-right: 100px;
+}
+.arrivalsfour {
+    display: flex;
+    justify-content: space-around;  
+    flex-direction: row-reverse; 
+}
+.arrivalsfour p{
+    font-family: roboto;
+    font-weight: bold;
+    font-size:22px;
+    position: absolute;
+    right: 500px;
+    margin-top: 150px
+}
+.arrivalsfour h2{
+    margin-top:130px;
+    font-family: roboto;
+    font-weight: bold;
+    font-size:28px;
+}
+.arrivalsfour h4{
+    font-family: roboto;
+    font-weight: bold;
+    font-size:20px;
+}
+.offerpartfour{
+    margin-left: 125px;
+}
+.performancesection{
+    background-image: url(assets/images/home/aboutbrands.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    margin-top: -7px;
+}
+.subdivisionone h1{
+    font-family: roboto;
+    font-weight: bold;
+    font-size:35px;
+    color: white;
+    padding: 220px 0px 30px 60px;
+} 
+.subdivisionone p{
+    font-family:inter;
+    font-size: 20px;
+    color: white;
+    width: 33%;
+    padding: 0px 0px 0px 60px;
+}
+.aboutsection{
+    background-image: url(assets/images/home/about2.png);
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    width: 100%;
+}
+.aboutheading h1{
+    text-align: center;
+    color:black;
+    font-family:bebas neue;
+    font-weight:lighter;
+    font-size:45px;
+    text-align: center;
+    padding-top:70px;
+}
+.aboutbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.aboutbox .inside{
+    background-color: #000000;
+    opacity: 0.7;
+    border-radius: 20px;
+    width: 338px;
+    padding: 50px;      
+}
+.aboutbox p{
+    color: white;
+    font-family: roboto;
+    font-size: 22px;    
+}
+.onlineordersection{
+    background-image: url(assets/images/home/rideimage.png);
+    background-position: center;
+    background-size: cover;
+    height:800px;
+    width: 100%;
+}
+.readyforridebox{
+    background-color:#ffffff;
+    opacity: 90%;
+    border-radius: 20px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 270px;
+    left: 100px;
+}
+.readyforridebox h1{
+    color:black;
+    font-family: roboto;
+    font-size: 28px;  
+    text-align: center;
+    padding-top: 45px;
+}
+.readyforridebox p{
+    color: black;
+    font-family: inter;
+    font-size: 20px;
+    width: 80%;
+    padding-left: 48px;
+    padding-top: 30px;
+}
+.readyforridebox button{
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    background-color: #353535;
+    margin: 30px 115px;
+}
+.footersection{
+    background-color: #343434;
+    width: 100%;
+    height: 300px;
+}
+.footerpart{
+    display: flex;
+    justify-content: space-between;
+    color: white;    
+}
+.footerpart h3{
+    font-family: inter;
+    font-size:19px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+.footerpart ul li{
+    list-style-type: none;
+    font-family: inter;
+    font-size:15px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.footerfour ul li img{
+    position: relative;
+    top: 4px;
+}
+.footerparttwo p{
+    font-family: inter;
+    font-size:15px;
+    font-weight: normal;    
+    color: white;    
+}
+.footerparttwo{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px 0px 0px;   
+}
+.socialicon{
+    display: flex;
+    gap: 24px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:575px){
+    .main{
+        overflow: hidden;
+    }
+    .headermenu{
+        display: flex;
+        justify-content: space-around;
+    }
+    .headersection{
+        height: auto;
+    }
+    .logo{
+        width: 50px;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar ul li{
+        display: block;
+        padding: 10px 5px;
+    }
+    .navbar ul li a{
+        font-size: 8px;
+    }
+    .underline{
+        display: none;
+    }
+    
+    .searchicon{
+       display: none;
+    }
+    .carticon{
+        display: none;
+    }
+    .bannerimage{
+        height: 237px;
+        width: 100%;
+    }
+    .bannercontent h1{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .bannercontent select{
+        width: 78%;
+        padding: 5px;
+        margin-left: 18px;
+        border: 1px solid white;
+        border-radius: 3px;
+        font-size: 6px;
+    }
+    .bannercontent{
+        width: 150px;
+        height: 80px;
+        position: absolute;
+        top: 129px;
+        right: 46px;
+    }
+    @keyframes slidinganimation{
+        0% {
+            right: 0px;
+        }
+        100% {
+            right: 50px;
+        }
+    }
+    .offerpartone{
+        margin-right: 0px;
+    }
+    .offerparttwo{
+        margin-left: 0px;
+    }
+    .offerpartthree{
+        margin-right: 0px;
+    }
+    .offerpartfour{
+        margin-left: 0px;
+    }
+    .arrivalssection img{
+        height: 100px;
+        width: 100px;
+    }
+    .arrivals h1{
+        font-size: 15px;
+        padding-top: 20px;
+    }
+    .arrivalsone h2{
+        font-size: 10px;
+    }
+    .arrivalsone h4{
+        font-size: 8px;
+    }
+    .arrivalsone p{
+        font-size: 8px;
+        position: unset;
+        left: 200px;
+    }
+    .arrivalstwo h2{
+        font-size: 10px;
+        margin-top: 42px;
+    }
+    .arrivalstwo h4{
+        font-size: 8px;
+    }
+    .arrivalstwo p{
+        font-size: 8px;
+        margin-top: 40px;
+        right: 125px;
+    }
+    .imagesone{
+        margin: 0px;
+    }
+    .arrivalsthree h2{
+        font-size: 10px;
+        margin-top: 33px;
+    }
+    .arrivalsthree h4{
+        font-size: 8px;
+    }
+    .arrivalsthree p{
+        font-size: 8px;
+    left: 147px;
+    margin-top: 34px;
+    }
+    .arrivalsfour h2{
+        font-size: 10px;
+        margin-top: 34px;
+    }
+    .arrivalsfour h4{
+        font-size: 10px;
+    }
+    .arrivalsfour p{
+        font-size: 8px;
+        margin-top: 36px;
+        right: 126px;
+    }
+    .subdivisionone h1{
+        font-size: 12px;
+    padding: 35px 0px 0px 15px;   
+    }
+    .performancesection{
+        height: 213px;
+        width: 100%;
+        background-position: initial;
+    }
+    .subdivisionone p{
+        font-size: 8px;
+        padding: 0px 0px 0px 15px;
+        width: 40%;
+    }
+    .aboutsection{
+        height: auto;
+    }
+    .aboutheading h1{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .aboutbox{
+        margin-top: 20px;
+    }
+    .aboutbox .inside{
+        padding: 20px;
+        width: 250px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .aboutbox p{
+        font-size: 10px;
+    }
+    .onlineordersection{
+        height: 260px;
+    }
+    .readyforridebox{
+        height: auto;
+        width: 200px;
+        position: relative;
+        top: 70px;
+        left: 15px;
+        border-radius: 5px;
+    }
+    .readyforridebox h1{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .readyforridebox p{
+        font-size: 8px;
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+    .readyforridebox button{
+        margin: 9px 63px;
+        padding: 6px 13px;
+        font-size: 8px;
+    } 
+    .footerpart{
+        display: block;
+        padding: 20px;
+    }
+    .footersection{
+        height: auto;
+    }
+    .footerpart h3{
+        margin: 0px;
+        padding-top: 20px;
+        font-size: 12px;
+    }
+    .footerpart ul li{
+        font-size: 8px;
+    }
+    .footerparttwo{
+        display: block;
+        padding: 0px;
+    }
+    .socialicon{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    .footerparttwo p{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:1367px){
+    .searchicon{
+        margin-right: -350px;
+    }
+}

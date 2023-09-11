@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500&family=Jost:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Jost:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+.headersection{
+    background-color: #343434;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    z-index: 9;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li{
+    list-style-type: none;
+    padding:26px 50px 26px 25px;
+}
+.navbar ul{
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+    font-family:inter;
+    font-size: 15px;
+}
+.headermenu{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    padding-top: 14px;
+}
+.searchbox{
+    background-color:white;
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    outline-style: none;
+    color: black;
+    padding-left: 15px;
+}
+
+.searchicon,.carticon{
+    padding-top: 25px;
+}
+.bannerimage{
+    background-image: url(assets/images/bannerimage.png);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height:800px;    
+}
+.bannercontent{
+    background-color: #353535;
+    opacity: 80%;
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 420px;
+    right: 150px;
+}
+.bannercontent{
+    animation-name: slidinganimation;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+}
+@keyframes slidinganimation{
+    from{
+        right: 0px;        
+    }
+    to{
+        right: 150px;
+    }
+}
+.bannercontent h1{
+    color: white;
+    font-family:bebas neue;
+    font-weight:lighter;
+    font-size:45px;
+    text-align: center;
+    padding-top: 65px;
+}
+.bannercontent select{
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: #343434;
+    color: white;
+    padding: 8px 10px 8px 20px;
+    width: 75%;
+    margin-left: 45px;
+    font-size: 12px;
+    outline-style: none;    
+}
+
+.aboutbackground{
+    /* background-image: url(assets/images/about/backgroundimage\ 32.png);    */
+    background-size: cover;
+    background-position:top;
+    width: 100%;
+    height: auto;
+}
+.aboutheading h1{
+    color: black;
+    font-family:bebas neue;
+    font-weight:lighter;
+    font-size:45px;
+    text-align: center;
+    padding-top: 65px;
+}
+.aboutflexone{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0px;
+}
+.aboutfirst h3{
+    font-family: jost;
+    font-size:25px;
+    font-weight: normal;
+}
+.aboutfirst p{
+    font-family: inter;
+    font-size:20px;
+    width: 80%;
+    font-weight: normal;  
+}
+.aboutfirst{
+    position: relative;
+    right: 450px;
+}
+.aboutfirstimage{
+    width: 100%;
+    height: 180px;
+}
+.aboutflextwo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.aboutsecond h3{
+    font-family: jost;
+    font-size:25px;
+    font-weight: normal;
+}
+.aboutsecond p{
+    font-family: inter;
+    font-size:20px;
+    width: 80%;
+    font-weight: normal;  
+}
+.aboutsecond{
+    position: relative;
+    left: 575px;
+}
+.aboutsecondimage{
+    height: 180px;
+    padding: 0px 80px;
+}
+.aboutflexthree{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0px;
+}
+.aboutthird h3{
+    font-family: jost;
+    font-size:25px;
+    font-weight: normal;
+}
+.aboutthird p{
+    font-family: inter;
+    font-size:20px;
+    width: 60%;
+    font-weight: normal;  
+}
+.aboutthird{
+    position: relative;
+    right: 400px;
+}
+.aboutthirdimage{
+    width: 100%;
+    height: 180px;
+}
+.aboutflexfour{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-bottom: 40px;
+}
+.aboutfourth h3{
+    font-family: jost;
+    font-size:25px;
+    font-weight: normal;
+}
+.aboutfourth p{
+    font-family: inter;
+    font-size:20px;
+    width: 80%;
+    font-weight: normal;  
+}
+.aboutfourth{
+    position: relative;
+    left: 575px;
+}
+.aboutfourthimage{
+    height: 180px;
+    padding: 0px 80px;
+}
+.reviewsection{
+    background-color: #f1f1f1;
+    width: 100%;
+    height: auto;
+}
+.reviewheading h1{
+    font-family: bebas neue;
+    font-weight: lighter;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 65px;
+}
+.flexpart{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 65px 0px ;    
+}
+.reviewflexpart{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.qualitysection{
+    background-image: url(assets/images/tools/backgroundtool.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+}
+.flexbackground{
+    background-color: rgba(255, 255, 255, 0.83);
+    height: 150px;
+    width: 90%;
+    border-radius: 20px;
+    position: relative;
+    top: 550px;
+    left: 60px;
+    text-align: center;
+}
+.flexdivision {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+.flexdivision p{
+    font-family: inter;
+    font-size:15px;  
+}
+
+.footersection{
+    background-color: #343434;
+    width: 100%;
+    height: 300px;
+}
+.footerpart{
+    display: flex;
+    justify-content: space-between;
+    color: white;    
+}
+.footerpart h3{
+    font-family: inter;
+    font-size:19px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+.footerpart ul li{
+    list-style-type: none;
+    font-family: inter;
+    font-size:15px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.footerfour ul li img{
+    position: relative;
+    top: 4px;
+}
+.footerparttwo p{
+    font-family: inter;
+    font-size:15px;
+    font-weight: normal;    
+    color: white;    
+}
+.footerparttwo{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px 0px 0px;   
+}
+.socialicon{
+    display: flex;
+    gap: 24px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:575px){
+    .main{
+        overflow: hidden;
+    }
+    .headermenu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .headersection{
+        height: auto;
+    }
+    .logo{
+        width: 50px;
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar ul li{
+        display: block;
+        padding: 10px 5px;
+    }
+    .navbar ul li a{
+        font-size: 8px;
+    }
+    .underline{
+        display: none;
+    }
+    
+    .searchicon{
+       display: none;
+    }
+    .carticon{
+        display: none;
+    }
+    .bannerimage{
+        height: 237px;
+        width: 100%;
+    }
+    .bannercontent h1{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .bannercontent select{
+        width: 78%;
+        padding: 5px;
+        margin-left: 18px;
+        border: 1px solid white;
+        border-radius: 3px;
+        font-size: 6px;
+    }
+    .bannercontent{
+        width: 150px;
+        height: 80px;
+        position: absolute;
+        top: 129px;
+        right: 46px;
+    }
+    @keyframes slidinganimation{
+        0% {
+            right: 0px;
+        }
+        100% {
+            right: 50px;
+        }
+    }
+    .aboutheading h1{
+        font-size: 16px;
+        padding: 20px 0px;
+    }
+    .aboutflexone{
+        padding: 0px;
+    }
+    .aboutfirstimage{
+        height: 58px;
+    }
+    .aboutsecondimage ,.aboutfourthimage ,.aboutthirdimage{
+        height: 58px;
+        width: 100%;
+        padding: 0px;
+    }
+    .aboutfirst{
+        right: 130px;
+    }
+    .aboutfourth{
+        left: 145px;
+    }
+    .aboutthird{
+        right: 130px;
+    }
+    .aboutfirst h3,.aboutsecond h3,.aboutthird h3,.aboutfourth h3{
+        font-size: 8px;
+    }
+    .aboutfirst p,.aboutsecond p,.aboutthird p ,.aboutfourth p {
+        font-size: 6px;
+        width: 100px;
+    }
+    .aboutsecond{
+        left: 145px;
+    }
+    .aboutflextwo{
+        padding-top: 40px;
+    }
+
+    .reviewheading h1{
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .flexpart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    .reviewone iframe{
+        height: 200px;
+        width: 350px;
+    }
+    .reviewtwo iframe{
+        height: 200px;
+        width: 350px;
+    }
+    .reviewthree iframe{
+        height: 200px;
+        width: 350px;
+    }
+    .qualitysection{
+        height: 300px;
+    }
+    .flexdivision img{
+        height: 40px;
+        width: 40px;
+    }
+    .flexdivision p{
+        font-size: 12px;
+    }
+    .flexbackground{
+        height: 100px;
+        width: 90%;
+        position: relative;
+        top: 140px;
+        left: 0px;
+    }
+    .flexdivision{
+        padding: 0px;
+    }
+
+
+
+
+    .footerpart{
+        display: block;
+        padding: 20px;
+    }
+    .footersection{
+        height: auto;
+    }
+    .footerpart h3{
+        margin: 0px;
+        padding-top: 12px;
+        font-size: 15px;
+    }
+    .footerpart ul li{
+        font-size: 8px;
+    }
+    .footerparttwo{
+        display: block;
+        padding: 0px;
+    }
+    .socialicon{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+    .footerparttwo p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .flexbackground{
+        width: 100%;
+    }
+    .flexdivision img{
+        height: 20px;
+    width: 20px;
+    }
+    .flexdivision p{
+        font-size: 8px;
+    }
+    .flexbackground{
+        height: 50px;
+        border-radius: 5px;
+    }
+    .qualitysection {
+        height: 200px;
+    }
+
+}
+
+@media only screen and (min-width:1367px){
+    .searchicon{
+        margin-right: -350px;
+    }
+    .aboutfirst {
+        position: relative;
+        right: 715px;
+    }
+    .aboutfirstimage{
+        width: 100%;
+        height: 250px;
+    }
+    .aboutsecondimage{
+        width: 100%;
+        height: 250px;
+        padding: 0px;
+    }
+    .aboutsecond{
+        position: relative;
+        left: 864px;
+    }
+    .aboutthirdimage{
+        width: 100%;
+        height: 250px;
+    }
+    .aboutthird {
+        position: relative;
+        right: 583px;
+    }
+    .aboutfourthimage{
+        width: 100%;
+        height: 250px;
+        padding: 0px;
+    }
+    .aboutfourth {
+        position: relative;
+        left: 820px;
+        width: 565px;
+    }
+}
